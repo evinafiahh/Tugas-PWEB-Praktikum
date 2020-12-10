@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengajuan Pinjaman</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <p id="logo1">KSB</p>
+            <p id="logo2">o n l i n e</p>
+        </div>
+        <div id="navbar1">
+            <a href="#" class="navbar2">BERANDA</a>
+            <a href="#" class="navbar2">SIMPANAN</a>
+            <a href="#" class="navbar2">PINJAMAN</a>
+            <a href="#" class="navbar2">LAPORAN</a>
+            <a href="#" class="navbar2">PROFIL</a>
+        </div>
+    </div>
+    <div id="main">
+        <img id="poster" src="gambar.jpeg">
+        <div id="form">
+            <p id="judul">Tambahkan Pengajuan Pinjaman</p>
+        <form name="formPengajuan" id="inputan">
+            <p id="next">Id Nasabah</p>
+            <input id="nasabah" type="text" placeholder="Id Nasabah">
+            <br><br>
+            <p id="next">Tanggal Pengajuan</p>
+            <input id="tanggal" type="date">
+            <br><br>
+            <p id="next">Jenis Pinjaman</p>
+            <input id="jenisp" type="text" list="jenis" placeholder="Jenis Pinjaman">
+            <datalist id="jenis">
+                <option value="Biasa/Maks: 2.000.000 /Bunga: 2% /Lama: 4 Bulan"></option>
+                <option value="Menengah/Maks: 4.000.000 /Bunga: 4% /Lama: 8 Bulan"></option>
+                <option value="Full/Maks: 8.000.000 /Bunga: 8% /Lama: 12 Bulan"></option>
+            </datalist>
+            <br><br>
+            <p id="next">Besar Pinjaman</p>
+            <input id="besar" type="text" placeholder="Besar Pinjaman">
+            <br><br>
+            <input id="button" type="button" value="Lakukan Pengajuan" onclick="terimainput()">
+        </form>            
+        </div>
+    </div>
+    <div id="tabeldata">
+        <div id="judult">
+            <h1><b>Data Pengajuan Pinjaman</b></h1>
+            <p></p>Data pengajuan pinjaman yang terdaftar akan dimunculkan di sini!</p>
+        </div>
+        <div id="tabel">
+            <table id="inputtabel" border="3" cellspacing="0" cellpadding="10">
+                <thead id="htabel">
+                    <th>Id Nasabah</th>
+                    <th>Tanggal Pengajuan</th>
+                    <th>Jenis Pinjaman</th>
+                    <th>Besar Pinjaman</th>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

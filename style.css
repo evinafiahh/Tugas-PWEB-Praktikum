@@ -1,0 +1,21 @@
+@font-face {
+    font-family: Alatsi;
+    src : url(Alatsi-Regular.ttf)
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Alatsi;
+}
+.navbar2{
+    margin-left: 30px;
+    margin-top: 3%;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+#isi{
+    margin-top: 10%;
+    margin-left: 5%;
+}
